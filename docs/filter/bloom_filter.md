@@ -74,7 +74,7 @@ inline bool Contain(const ECPoint& A) const;
 ```
 void PrintInfo();
 ```
-Get the status of the `BloomFilter`, such as the number of inserted elements, hashtable size and the average number of bits per element.
+Get the state of the `BloomFilter`, such as the number of inserted elements, hashtable size and the average number of bits per element.
 
 ## Sample Code
 An example of how to build a bloom filter with $2^{20}$ random blocks. More detailed sample code is provided in test files.
