@@ -25,7 +25,7 @@ There are two ways of generating decryption key.
 ```
 inline Key GenDecKey(const block &salt);
 ```
-* `const block &salt`: a random block assigned by the caller to generate the decryption key. To ensure correct decryption, it should be the same salt generating the encryption key.
+* `const block &salt`: a random block assigned by the caller to generate the decryption key. To ensure correct decryption, it should be the same `salt` generating the encryption key.
 
 ```
 inline Key DeriveDecKeyFromEncKey(const Key &enc_key);
