@@ -40,7 +40,7 @@ Encrypt block data of length `BLOCK_LEN` using ECB mode.
 inline void ECBEnc(const Key &key, block* data, size_t BLOCK_LEN);
 ```
 * `const Key &key`: the AES encryption key.
-* `block* data`: a pointer of `block` points to plaintext, the ciphertext generated will cover the space it points to.
+* `block* data`: a pointer of `block` points to the space of plaintext, the ciphertext generated will cover the space.
 * `size_t BLOCK_LEN`: the length of the plaintext.
 
 Decrypt block data of length `BLOCK_LEN`.
@@ -48,7 +48,7 @@ Decrypt block data of length `BLOCK_LEN`.
 inline void ECBDec(const Key &key, block* data, size_t BLOCK_LEN);
 ```
 * `const Key &key`: the AES decryption key.
-* `block* data`: a pointer of `block` points to ciphertext, the plaintext generated will cover the space it points to.
+* `block* data`: a pointer of `block` points to the space of plaintext, the ciphertext generated will cover the space.
 * `size_t BLOCK_LEN`: the length of the ciphertext.
 
 ### CBC Mode
@@ -57,7 +57,7 @@ Encrypt block data of length `BLOCK_LEN` using CBC mode.
 inline void CBCEnc(const Key &key, block* data, size_t BLOCK_LEN);
 ```
 * `const Key &key`: the AES encryption key.
-* `block* data`: a pointer of `block` points to plaintext, the ciphertext generated will cover the space it points to.
+* `block* data`: a pointer of `block` points to the space of plaintext, the ciphertext generated will cover the space.
 * `size_t BLOCK_LEN`: the length of the plaintext.
 
 Decrypt block data of length `BLOCK_LEN`.
@@ -65,7 +65,7 @@ Decrypt block data of length `BLOCK_LEN`.
 inline void CBCDec(const Key &key, block* data, size_t BLOCK_LEN);
 ```
 * `const Key &key`: the AES decryption key.
-* `block* data`: a pointer of `block` points to ciphertext, the plaintext generated will cover the space it points to.
+* `block* data`: a pointer of `block` points to the space of plaintext, the ciphertext generated will cover the space.
 * `size_t BLOCK_LEN`: the length of the ciphertext.
 
 
