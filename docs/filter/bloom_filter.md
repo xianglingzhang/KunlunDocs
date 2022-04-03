@@ -36,7 +36,7 @@ inline bool ReadObject(char* buffer);
 Read a `BloomFilter` object from file or `char* buffer`, `ReadObject` returns true if it succeeds.
 
 ### Insert
-Insert a single element to the `BloomFilter`. The type of element should be any C++ POD type or `ECPoint` proto.
+Insert a single element to the `BloomFilter`. The type of element should be any C++ POD type or `ECPoint`.
 ```
 template <typename ElementType> // Note: T must be a C++ POD type.
 inline void Insert(const ElementType& element);
@@ -60,7 +60,7 @@ inline void Insert(const std::vector<ECPoint> &vec_A);
 ```
 
 ### Query
-Query if an element is in the `BloomFilter`. The type of element should be any C++ POD type or `ECPoint` type. Note that if the element type is `std::string`, it will call the specialized template function of `Contain`.
+Query if an element is in the `BloomFilter`. The type of element should be any C++ POD type or `ECPoint`. Note that if the element type is `std::string`, it will call the specialized template function of `Contain`.
 ```
 template <typename ElementType>
 inline bool Contain(const ElementType& element) const;
