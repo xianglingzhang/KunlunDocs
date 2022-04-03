@@ -11,7 +11,7 @@ struct Seed{
     AES::Key aes_key;
 };
 ```
-* `size_t counter`: records the status of `PRG`.
+* `size_t counter`: records the state of `PRG`.
 * `AES::Key`: a struct at namespace [`AES`](./aes.md), which depics the AES key.
 
 ### SetSeed
