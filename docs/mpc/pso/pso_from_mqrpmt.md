@@ -1,5 +1,5 @@
 # Private Set Operation From Multi-Point RPMT
-`PSO` implements private set intersection (PSI), private set union (PSU), private set intersection cardinality (PSI-CA) and private set intersection sum (PSI-Sum) based on ['cwPRFmqRPMT'](../rpmt/cwprf_mqrpmt.md) and [IKNPOTE](../ot/iknp_ote.md).
+`PSO` implements private set intersection (PSI), private set union (PSU), private set intersection cardinality (PSI-CA) and private set intersection sum (PSI-Sum) based on [`cwPRFmqRPMT`](../rpmt/cwprf_mqrpmt.md) and [`IKNPOTE`](../ot/iknp_ote.md).
 
 * PSI allows two parties, the sender and the receiver, to compute the intersection of their private sets without revealing extra information to each other.
     - In the PSI-CA setting, instead of getting the contents of the intersection, the receiver will get the cardinality.
