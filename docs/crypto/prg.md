@@ -1,5 +1,5 @@
 # Pseudorandom Generator
-This file implements `PRG` using `AES`. 
+This file implements `PRG` using [`AES`](./aes.md). 
 
 
 ## Construction
