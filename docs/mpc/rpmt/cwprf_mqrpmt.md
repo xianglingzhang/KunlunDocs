@@ -15,7 +15,7 @@ struct PP
 };
 ```
 * `bool malicious`: an indication variable, indicating if the protocol is secure against semi-honest adversaries(`malicious = false`) or malicious adversaries(`malicious = true`).
-* `std::string filter_type`: used to specify which data structure type the algorithm will use to do membership test. `filter_type = shuffle` means it will use `unordered_set`, `filter_type = bloom` means it will use bloom filter.
+* `std::string filter_type`: used to specify which data structure the algorithm will use to do membership test. `filter_type = shuffle` means it will use `unordered_set`, `filter_type = bloom` means it will use bloom filter.
 * `size_t statistical_security_parameter`: used to specify the false positive probability of bloom filter, which equals `1/(1 << {statistical_security_parameter/2})`.
 
 `PP` can be initialized by `Setup`. The input `lambda` is statistical security parameter.
