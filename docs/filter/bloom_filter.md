@@ -12,7 +12,7 @@ BloomFilter(size_t projected_element_num, size_t statistical_security_parameter)
 ```
 inline void Clear();
 ```
-Clear the current state of bloom filter, and sets the `projected_element_num` back to 0.
+Clear the contents of bloom filter, and sets the `projected_element_num` back to 0.
 
 ## Use
 ### Serialization
