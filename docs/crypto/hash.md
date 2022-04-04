@@ -8,7 +8,7 @@ Adaptor for SM3: default output length is 256 bit.
 void SM3(const unsigned char *input, size_t HASH_INPUT_LEN, unsigned char *output);
 ```
 * `const unsigned char *input`: a pointer of `char` points to the input hashing data. 
-* `size_t HASH_INPUT_LEN`: the length of the input hashing data.
+* `size_t HASH_INPUT_LEN`: the byte length of the input hashing data.
 * `unsigned char *output`: a pointer of `char` points to the output hashing data. 
 
 Adaptor for CBC-AES hash: default output length is 128 bit.
@@ -16,7 +16,7 @@ Adaptor for CBC-AES hash: default output length is 128 bit.
 void CBCAES(const unsigned char *input, size_t HASH_INPUT_LEN, unsigned char *output);
 ```
 * `const unsigned char *input`: a pointer of `char` points to the input hashing data. 
-* `size_t HASH_INPUT_LEN`: the length of the input hashing data.
+* `size_t HASH_INPUT_LEN`: the byte length of the input hashing data.
 * `unsigned char *output`: a pointer of `char` points to the output hashing data. 
 
 ### Hash String to Other
