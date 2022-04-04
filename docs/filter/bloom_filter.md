@@ -26,14 +26,14 @@ inline bool WriteObject(std::string file_name);
 
 inline bool WriteObject(char* buffer);
 ```
-Write a `BloomFilter` object to file or `char* buffer`, `WriteObject` returns true if it succeeds. The caller need to allocate stored space of `char* buffer` previously, which is the value returned from `ObjectSize`.
+Write a `BloomFilter` object to file or the location `buffer` points to, `WriteObject` returns true if it succeeds. The caller need to allocate memory space of `buffer` previously, which is the value returned from `ObjectSize`.
 
 ```
 inline bool ReadObject(std::string file_name);
 
 inline bool ReadObject(char* buffer);
 ```
-Read a `BloomFilter` object from file or `char* buffer`, `ReadObject` returns true if it succeeds.
+Read a `BloomFilter` object from file or the location `buffer` points to, `ReadObject` returns true if it succeeds.
 
 ### Insert
 Insert a single element to the `BloomFilter`. The type of element should be any C++ POD type or `ECPoint`.
